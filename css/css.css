@@ -1,0 +1,315 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("../img/jardin.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: grid;
+    grid-template-rows: auto 1fr auto; 
+}
+
+
+/* -----------------------HEADER-------------------- */
+
+nav{
+    width: 70%;
+    background-color: white;
+    position: sticky;
+    top: 10px; 
+    left: 0;
+    right: 0;
+    z-index: 2;
+    margin: 10px auto; 
+    border-radius: 100px;
+}
+
+nav ul{
+    height: 50px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul li{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+    background-image:"maceta.webp";
+    
+}
+
+/* -------------------MAIN-------------------------- */
+
+main{
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 70%;
+    margin: 0 auto; 
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT';
+    padding: 20px;
+    
+}
+
+.titulo{
+    position: static;
+    text-decoration:underline;
+    margin: auto;
+    text-align: center;
+    font-size: 50px;
+}
+
+.subtitulo{
+    position: static;
+    margin: auto;
+    text-align: center;
+    font-size: 30px;
+}
+
+.subrayado{
+    text-decoration: underline;
+}
+
+.centrado{
+    text-align: center;
+}
+
+.logo{
+    width:400px; 
+    height:300px;
+}
+
+.personajes{
+    text-decoration: underline;
+}
+
+p{
+    text-indent: 30px;
+    margin-top: 20px;    
+    padding: 10px;
+}
+
+/* ------------------- SECCIÓN RESEÑAS ------------------- */
+.contenedor-resenas {
+    display: flex;
+    justify-content: space-between; 
+    margin-top: 30px;
+    gap: 20px; 
+    flex-wrap: wrap;
+}
+
+.tarjeta-resena {
+    background-color: rgba(165, 237, 247, 0.5);
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    width: 30%; 
+    text-align: center;
+    
+}
+
+.tarjeta-resena h3 {
+    font-size: 28px;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+.tarjeta-resena p {
+    text-indent: 0; /* Quitamos la sangría general de los párrafos solo para aquí */
+    margin-top: 10px;  
+}
+
+.estrellas {
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+/* ------------------- CSS Galeria ------------------- */
+.tabla{
+    width: 100%;
+}
+
+.tabla tr{
+    width: auto;
+    margin: 0 auto;
+}
+
+.tabla tr th{
+    border: 2px solid;
+    
+    background-color: rgba(165, 237, 247, 0.5);
+    border-radius: 20px;
+}
+
+.tabla img{
+    height: 400px;
+    width: 500px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.tabla ul{
+    list-style-type:disc;
+    text-align: left;
+    
+}
+
+.tabla ul li{
+    list-style-type:disc;
+    margin-top: 2px;
+    margin-left: 7%;
+}
+
+/* ------------------- CSS Presupuestos ------------------- */
+
+.recuadro {
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 60%; 
+    height: auto;
+    margin: 30px auto; 
+    padding: 40px; /* Espacio interior */
+    border-radius: 30px;
+    border: 4px solid #56ab2f;
+}
+
+.formularioContactos {
+    font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+}
+
+form.formularioContactos li {
+    margin-bottom: 20px;
+}
+
+form.formularioContactos label {
+    display: block; /* Hacemos que este encima del recuadro blanco */
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: #2e7d32;
+}
+
+.zonaEscrito {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: #f8fcf8;
+}
+
+.politica {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+
+.botones {
+    padding: 12px 30px;
+    font-size: 18px;
+    color: white;
+    border-radius: 50px;
+    margin: 10px;
+}
+
+/*Vamos a ponerle un color distinto a cada botón */
+
+/* Botón Enviar */
+input[type="submit"].botones {
+    background-color: #56ab2f; 
+}
+
+/* Botón Borrar */
+input[type="reset"].botones {
+    background-color: #d32f2f;
+}
+
+
+
+/* ------------------- CSS Contactanos ------------------- */
+.info-empresa {
+    display: flex;
+    justify-content: space-around; /* Distribuye el espacio equitativamente */
+    flex-wrap: wrap; /* Permite que bajen si no caben */
+    margin-top: 20px;
+    gap: 20px;
+    width: 90%; 
+    margin: 20px auto; 
+}
+
+.datos {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+    padding: 20px;
+    width: 22%;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+    
+}
+
+.icono {
+    font-size: 40px;
+    margin-bottom: 10px;
+    text-indent: 0; /* Quitamos la sangria */
+}
+
+.datos h3 {
+    margin-bottom: 10px;
+    color: #174472;
+    text-decoration: underline;
+}
+
+.datos p {
+    text-indent: 0; /* Quitamos la sangría */
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+
+/* ------------------- FOOTER ------------------- */
+footer {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 22%;
+    height: auto; 
+    border-radius: 100px;
+    margin: 40px auto;
+}
+
+.RRSS{
+    width:60px; 
+    height:60px;
+    margin-top: 15px;
+}
+
+.direccion {
+    font-size: 16px;
+    text-align: center;
+    text-indent: 0; /* Quitamos la sangría general de los párrafos solo para aquí */
+    margin-top: 0;
+    color: #333; 
+}
+
+.legal {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.legal a {
+    color: #555; 
+    transition: color 0.3s;
+}

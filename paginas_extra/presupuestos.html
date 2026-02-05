@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Plants vz Zombies Garden Warfare</title>
+    <link rel="stylesheet" href="../css/css.css">
+</head>
+<!--Usamos el Header para el menú de navegación-->
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html"><img src="../img/logoEmpresa.jpg" width="70" height="50" alt="logo Empresa"></a></li>
+                <li><a href="../index.html">Página Principal</a></li>
+                <li><a href="../paginas_extra/galeria.html">Galería</a></li>
+                <li><a href="../paginas_extra/presupuestos.html"><img src="../img/marca_zomflor.png" width="50"
+                            height="50" alt="página actual"></a></li>
+                <li><a href="../paginas_extra/contactanos.html">Contactanos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Formulario-->
+    <main class="centrado">
+        <p style="font-size: 25px; color: white; text-shadow: 2px 2px 4px #000; margin-bottom: 20px; font-weight: bold;"> 
+            Realice el siguiente formulario para conseguir más información
+        </p>
+
+        <section class="recuadro">
+            
+            <h3 style="text-align: center; color: #2e7d32; margin-bottom: 20px;">PIDE TU PRESUPUESTO</h3>
+            
+            <form class="formularioContactos" action="#" method="get">
+                <ul style="list-style: none; padding: 0;">
+                    
+                    <li>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" name="nombre" id="nombre" class="zonaEscrito" required minlength="3" maxlength="20">
+                    </li>
+
+                    <li>
+                        <label for="Email">Email:</label>
+                        <input type="email" name="Email" id="Email" class="zonaEscrito" required maxlength="50">
+                    </li>
+
+                    <li>
+                        <label for="Telefono">Teléfono:</label>
+                        <input type="tel" name="Telefono" id="Telefono" class="zonaEscrito" pattern="[0-9]{9}" 
+                        maxlength="9" required>
+                        
+                    </li>
+
+                    <li>
+                        <label for="mensaje">Solicite más información:</label>
+                        <textarea id="mensaje" cols="50" rows="6" name="prueba" class="zonaEscrito" placeholder="Escriba aquí..."></textarea>
+                    </li>
+
+                    <li class="politica">
+                        <label for="casilla">Política de Privacidad:</label>
+                        <input id="casilla" type="checkbox" name="casilla" value="Acepto" required>
+                    </li>
+
+                    <li style="text-align: center;">
+                        <input type="submit" value="Enviar" class="botones">
+                        <input type="reset" value="Borrar" class="botones">
+                    </li>
+
+                </ul>
+            </form>
+        </section>
+
+    </main>
+    <!--Usamos el Footer para las redes sociales-->
+    <footer class="centrado">
+
+        <a href="https://www.instagram.com/officialpvz/?hl=es">
+            <img class="RRSS" src="../img/Instagram.png" alt="instagram" width="1000" height="1000">
+        </a>
+        <a href="https://www.facebook.com/plantsversuszombies/?locale=es_ES">
+            <img class="RRSS" src="../img/Facebookpng.png" alt="facebook"  width="1200" height="1201">
+        </a>
+        <a href="https://x.com/plantsvszombies?lang=es">
+            <img class="RRSS" src="../img/Twitter.png" alt="X" width="512" height="512">
+        </a>
+
+        <p class="direccion">
+            PopCap <br>
+            Av. del dos de Mayo, 49, 28934 Móstoles, Madrid
+        </p>
+
+        <div class="legal">
+            <p>Aviso Legal | Política de Privacidad</p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
